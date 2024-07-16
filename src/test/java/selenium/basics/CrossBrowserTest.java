@@ -21,10 +21,10 @@ public class CrossBrowserTest {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			System.out.println("Chrome is launched");
-		}else if(browser.equalsIgnoreCase("edge")) {
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-			System.out.println("Edge is launched");
+		//}else if(browser.equalsIgnoreCase("edge")) {
+		//	WebDriverManager.edgedriver().setup();
+		//	driver = new EdgeDriver();
+		//	System.out.println("Edge is launched");
 		}
 	}
 
