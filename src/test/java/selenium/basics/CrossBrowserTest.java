@@ -57,11 +57,11 @@ public class CrossBrowserTest {
 		String expected = "Google";
 		Assert.assertEquals(actual, expected);
 		extentTest.pass("Title is corret");
+		extentReport.flush();
 	}
 	
 	@AfterTest
 	void CloseBrowser() {
 		driver.quit();
-		extentReport.flush();
 	}
 }
